@@ -13,7 +13,7 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python :: 2.7'],
     keywords='docker docker-registry REST',
-    packages=find_packages(),
+    packages=find_packages(exclude=["tests"]),
     install_requires=['requests>=2.4.3',
                       'flexmock'],
 )
